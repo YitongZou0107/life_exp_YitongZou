@@ -15,3 +15,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Analysis
 
+```{r}
+library(gapminder)
+library(tidyverse)
+data(gapminder_unfiltered)
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  ungroup() %>%
+  select(year, country, lifeExp) %>%
+  arrange(year) ->
+  sumdat
+```
+

@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Analysis
 
+- Set the data
 ```{r}
 library(gapminder)
 library(tidyverse)
@@ -26,5 +27,6 @@ gapminder_unfiltered %>%
   select(year, country, lifeExp) %>%
   arrange(year) ->
   sumdat
+## new
 ```
 

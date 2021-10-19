@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Analysis
 
-- Set the data
+- get the data and group it
 ```{r}
 library(gapminder)
 library(tidyverse)
